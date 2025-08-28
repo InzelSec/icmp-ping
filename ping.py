@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# InzelSec - ICMP Ping (continuous)
+# InzelSec - ICMP Ping
 # Usage:
 #   sudo python3 ping.py 192.168.1.1
 #   sudo python3 ping.py 192.168.1.0/24 [delay_seconds]
@@ -71,11 +71,10 @@ def listen_replies(target_ip):
             continue
 
         icmp_type = pkt[20]
-        if icmp_type == 0:  # Echo Reply
+        if icmp_type == 0:  
             recv_time = time.time()
             ttl = pkt[8]
             print(f"{len(pkt)} bytes from {src_ip}: ttl={ttl} time={(recv_time - start_time)*1000:.2f} ms")
-            # reset start_time so next reply time is correct
             globals()['start_time'] = recv_time
     r.close()
 
@@ -88,7 +87,6 @@ if __name__ == "__main__":
     delay = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
 
     try:
-        # Only accept single IP for classic ping-like behavior
         ip = socket.gethostbyname(target_arg)
     except socket.gaierror:
         print("[-] Invalid target.")
