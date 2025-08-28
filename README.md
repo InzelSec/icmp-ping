@@ -1,4 +1,8 @@
-<img width="1024" height="1024" alt="ChatGPT Image Jun 5, 2025, 04_42_08 PM" src="https://github.com/user-attachments/assets/14b2c4c2-4a11-4bea-85de-fa660dfe591e" /> 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/14b2c4c2-4a11-4bea-85de-fa660dfe591e" alt="InzelSec Logo" width="150"/>
+</p>
+
+
 # ICMP Ping
 
 A Python implementation of the **ping** command using raw 
@@ -15,7 +19,7 @@ RTT in ms.
 Clone the repository and make the script executable:
 
 ```bash
-git clone https://github.com/<your-user>/icmp-ping.git
+git clone https://github.com/InzelSec/icmp-ping.git
 cd icmp-ping
 chmod +x ping.py
 ```
@@ -23,8 +27,12 @@ chmod +x ping.py
 ## Usage
 ```
 sudo python3 ping.py 8.8.8.8
+```
+```
 sudo python3 ping.py example.com
-# custom interval (seconds)
+```
+custom interval (seconds):
+```
 sudo python3 ping.py 8.8.8.8 0.5
 ```
 
