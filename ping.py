@@ -105,5 +105,5 @@ if __name__ == "__main__":
         send_pings(ip, delay)
     except KeyboardInterrupt:
         stop_flag = True
-        print("\n--- ping statistics ---")
+        print()
         sys.exit(0)
