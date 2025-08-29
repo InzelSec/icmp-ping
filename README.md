@@ -37,10 +37,5 @@ sudo python3 ping.py 8.8.8.8 0.5
 ```
 
 ## Output example:
-```
-PING 8.8.8.8 (ICMP) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=117 time=24.13 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=117 time=23.94 ms
-64 bytes from 8.8.8.8: icmp_seq=3 ttl=117 time=24.01 ms
-^C
-```
+
+<img width="477" height="108" alt="Screenshot 2025-08-29 at 09 14 45" src="https://github.com/user-attachments/assets/e7e5af52-9b5f-4c67-bd16-ff602a9c9865" />
